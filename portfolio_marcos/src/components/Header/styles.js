@@ -49,15 +49,15 @@ export const HeaderDiv = styled.div`
     flex-direction: column;
     align-items: center;
     position: fixed;
-    height: 100%;
+    height: 40%;
     width: 100%;
-    background-color: #fff;
+    background-color: #3e3e3e;
     padding-top: 24px;
 
     a {
       font-size: 24px;
       font-weight: bold;
-      color: #000;
+      color: #fff;
       text-decoration: none;
       margin-bottom: 16px;
     }

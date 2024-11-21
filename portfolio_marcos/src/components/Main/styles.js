@@ -33,6 +33,25 @@ export const MainDiv = styled.div`
     margin-bottom: 80px;
   }
 
+  #section-certificates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .certificate-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+    }
+  }
+    @media (max-width: 768px) {
+      #section-certificates {
+        .certificate-div {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+
   #section-interest {
     .form-div {
       display: flex;

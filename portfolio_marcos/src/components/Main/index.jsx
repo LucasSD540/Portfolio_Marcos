@@ -14,9 +14,23 @@ import mail from "../../assets/images/mail.png";
 import insta from "../../assets/images/insta.png";
 import github from "../../assets/images/github.png";
 import linkedin from "../../assets/images/linkedin.png";
+import python from "../../assets/images/python.png";
+import iot from "../../assets/images/iot.png";
+import data from "../../assets/images/data.png";
+import net from "../../assets/images/net.png";
+import computer from "../../assets/images/computer.png";
+import pdf1 from "../../assets/media/pdf1.pdf";
+import pdf2 from "../../assets/media/pdf2.pdf";
+import pdf3 from "../../assets/media/pdf3.pdf";
+import pdf4 from "../../assets/media/pdf4.pdf";
+import pdf5 from "../../assets/media/pdf5.pdf";
+import pdf6 from "../../assets/media/pdf6.pdf";
+import pdf7 from "../../assets/media/pdf7.pdf";
+import pdf8 from "../../assets/media/pdf8.pdf";
 import * as S from "./styles";
 import { CardTech } from "../CardTech";
 import { CardServices } from "../CardServices";
+import { CardCertificates } from "../CardCertificates";
 
 export const Main = () => {
   return (
@@ -82,6 +96,59 @@ export const Main = () => {
           <CardTech cardName="ReactJs" cardImage={react} />
           <CardTech cardName="MySQL" cardImage={mysql} />
           <CardTech cardName="VS Code" cardImage={vscode} />
+        </div>
+      </div>
+      <div id="section-certificates">
+        <h2 className="section-title">Certificados</h2>
+        <div className="certificate-div">
+          <CardCertificates
+            cardName="Análise de dados com Python"
+            cardImage={data}
+            cardAdress={pdf1}
+            cardDownload={pdf1}
+          />
+          <CardCertificates
+            cardName="Estruturas de Dados em Python"
+            cardImage={python}
+            cardAdress={pdf2}
+            cardDownload={pdf2}
+          />
+          <CardCertificates
+            cardName="Introdução à Análise de Dados com Python"
+            cardImage={data}
+            cardAdress={pdf3}
+            cardDownload={pdf3}
+          />
+          <CardCertificates
+            cardName=" Introdução	à	Linguagem	Python"
+            cardImage={python}
+            cardAdress={pdf4}
+            cardDownload={pdf4}
+          />
+          <CardCertificates
+            cardName="IOT e Programação de Sensores"
+            cardImage={iot}
+            cardAdress={pdf5}
+            cardDownload={pdf5}
+          />
+          <CardCertificates
+            cardName="Novos Desenvolvimentos em IOT"
+            cardImage={iot}
+            cardAdress={pdf6}
+            cardDownload={pdf6}
+          />
+          <CardCertificates
+            cardName=" Redes	de	Computadores	e	a	Internet	das	Coisas"
+            cardImage={net}
+            cardAdress={pdf7}
+            cardDownload={pdf7}
+          />
+          <CardCertificates
+            cardName=" Sensores,	Microcontroladores	e	Programação	em	Internet	das	Coisas"
+            cardImage={computer}
+            cardAdress={pdf8}
+            cardDownload={pdf8}
+          />
         </div>
       </div>
       <div id="section-services">
