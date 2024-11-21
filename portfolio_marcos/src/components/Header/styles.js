@@ -25,8 +25,6 @@ export const HeaderDiv = styled.div`
     a {
       font-size: 24px;
       font-weight: bold;
-      background: transparent;
-      border: none;
       cursor: pointer;
       color: #fff;
       text-decoration: none;
@@ -43,6 +41,42 @@ export const HeaderDiv = styled.div`
       .link-item {
         margin-left: 16px;
       }
+    }
+  }
+
+  .responsive-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 24px;
+
+    a {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      .link-items {
+        display: none;
+        .link-item {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 769px) {
+    .menu {
+      display: none;
     }
   }
 `;

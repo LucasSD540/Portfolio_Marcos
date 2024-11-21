@@ -20,4 +20,8 @@ export const CardDiv = styled.div`
     font-weight: bold;
     text-align: center;
   }
+
+  @media (max-width: 768px) {
+    margin-bottom: 24px;
+  }
 `;

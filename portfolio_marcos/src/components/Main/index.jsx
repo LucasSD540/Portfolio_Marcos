@@ -40,7 +40,7 @@ export const Main = () => {
         <h2 className="section-title">Sobre Mim</h2>
         <div className="about-info">
           <div className="div-1-about">
-            <p>
+            <p className="about-text">
               Sou desenvolvedor full stack com foco em back-end, apaixonado por
               criar soluções eficientes e escaláveis. Tenho experiência sólida
               com Java, que utilizo para construir aplicações robustas, e no
@@ -94,14 +94,23 @@ export const Main = () => {
       </div>
       <div id="section-interest">
         <h2 className="section-title">Se interessou?</h2>
-        <div className="form-div">
-          <div className="div-1-interest">
-            <input type="text" placeholder="Nome *" />
-            <input className="email-input" type="text" placeholder="E-mail *" />
-            <input type="text" placeholder="Telefone *" />
+        <div className="main-form-div">
+          <div className="form-div">
+            <div className="div-1-interest">
+              <input type="text" placeholder="Nome *" />
+              <input
+                className="email-input"
+                type="text"
+                placeholder="E-mail *"
+              />
+              <input type="text" placeholder="Telefone *" />
+            </div>
+            <div className="div-2-interest">
+              <textarea placeholder="Sua mensagem *" name="" id=""></textarea>
+            </div>
           </div>
-          <div className="div-2-interest">
-            <textarea placeholder="Sua mensagem *" name="" id=""></textarea>
+          <div className="btn-div">
+            <button>ENVIAR PROPOSTA</button>
           </div>
         </div>
       </div>

@@ -54,4 +54,25 @@ export const FooterDiv = styled.div`
       margin-top: 40px;
     }
   }
+
+  @media (max-width: 768px) {
+    .flex-div {
+      justify-content: center;
+
+      .dev-div {
+        h3 {
+          font-size: 24px;
+        }
+
+        p {
+          margin-top: 8px;
+          font-size: 16px;
+        }
+      }
+
+      .nav-div {
+        display: none;
+      }
+    }
+  }
 `;

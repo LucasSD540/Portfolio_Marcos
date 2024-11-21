@@ -37,4 +37,8 @@ export const CardDiv = styled.div`
     border: none;
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    margin-bottom: 24px;
+  }
 `;
