@@ -1,5 +1,3 @@
-import axios from "axios";
-import Swal from "sweetalert2";
 import hi from "../../assets/images/hi_icon.png";
 import download from "../../assets/images/download_icon.png";
 import dev from "../../assets/images/dev_image.png";
@@ -33,40 +31,6 @@ import * as S from "./styles";
 import { CardTech } from "../CardTech";
 import { CardServices } from "../CardServices";
 import { CardCertificates } from "../CardCertificates";
-
-const sendFormData = async () => {
-  const nome_completo = document.querySelector(
-    "input[name='nome_completo']"
-  ).value;
-  const email = document.querySelector("input[name='email']").value;
-  const telefone = document.querySelector("input[name='telefone']").value;
-  const mensagem = document.querySelector("textarea[name='mensagem']").value;
-
-  try {
-    await axios.post(
-      "https://friendly-pascal.85-239-238-220.plesk.page/admin/data.php",
-      {
-        nome_completo,
-        email,
-        telefone,
-        mensagem,
-      }
-    );
-
-    Swal.fire({
-      title: "Sucesso!",
-      text: "Dados enviados com sucesso.",
-      icon: "success",
-      confirmButtonText: "OK",
-    });
-  } catch (error) {
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: `Ocorreu um erro e os dados não foram enviados. Erro: ${error.message}`,
-    });
-  }
-};
 
 export const Main = () => {
   return (
@@ -197,28 +161,45 @@ export const Main = () => {
       </div>
       <div id="section-interest">
         <h2 className="section-title">Se interessou?</h2>
-        <div className="main-form-div">
+        <form
+          action="https://friendly-pascal.85-239-238-220.plesk.page/admin/data.php"
+          method="post"
+          className="main-form-div"
+        >
           <div className="form-div">
             <div className="div-1-interest">
-              <input type="text" name="nome_completo" placeholder="Nome *" />
               <input
-                className="email-input"
+                required
                 type="text"
+                name="nome_completo"
+                placeholder="Nome *"
+              />
+              <input
+                required
+                className="email-input"
+                type="email"
                 name="email"
                 placeholder="E-mail *"
               />
-              <input type="text" name="telefone" placeholder="Telefone *" />
+              <input
+                required
+                type="text"
+                name="telefone"
+                placeholder="Telefone *"
+              />
             </div>
             <div className="div-2-interest">
-              <textarea placeholder="Sua mensagem *" name="mensagem"></textarea>
+              <textarea
+                required
+                placeholder="Sua mensagem *"
+                name="mensagem"
+              ></textarea>
             </div>
           </div>
           <div className="btn-div">
-            <button type="submit" onClick={sendFormData}>
-              ENVIAR PROPOSTA
-            </button>
+            <button type="submit">ENVIAR PROPOSTA</button>
           </div>
-        </div>
+        </form>
       </div>
       <div id="section-contact">
         <h2 className="section-title">Contato</h2>
