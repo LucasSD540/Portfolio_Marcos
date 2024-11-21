@@ -318,6 +318,7 @@ export const MainDiv = styled.div`
         color: #fff;
         border: none;
         border-radius: 30px;
+        cursor: pointer;
 
         img {
           margin-right: 8px;
