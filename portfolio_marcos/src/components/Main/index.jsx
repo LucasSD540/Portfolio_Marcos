@@ -1,7 +1,7 @@
 import hi from "../../assets/images/hi_icon.png";
 import download from "../../assets/images/download_icon.png";
 import dev from "../../assets/images/dev_image.png";
-import java from "../../assets/images/java.png";
+import python_skill from "../../assets/images/python_skill.png";
 import react from "../../assets/images/react.png";
 import mysql from "../../assets/images/mysql.png";
 import vscode from "../../assets/images/vscode.png";
@@ -78,7 +78,7 @@ export const Main = () => {
                 <p className="statistics-title">Projetos realizados</p>
               </div>
               <div className="statistics-item">
-                <p className="statistics-number">07+</p>
+                <p className="statistics-number">08+</p>
                 <p className="statistics-title">Certificados e cursos</p>
               </div>
             </div>
@@ -92,7 +92,7 @@ export const Main = () => {
       <div id="section-skills">
         <h2 className="section-title">Ferramentas</h2>
         <div className="card-div">
-          <CardTech cardName="Java" cardImage={java} />
+          <CardTech cardName="Python" cardImage={python_skill} />
           <CardTech cardName="ReactJs" cardImage={react} />
           <CardTech cardName="MySQL" cardImage={mysql} />
           <CardTech cardName="VS Code" cardImage={vscode} />
@@ -211,11 +211,11 @@ export const Main = () => {
             </div>
             <div className="contact-item center">
               <img src={telephone} alt="" />
-              <p>61 9 9999-9999</p>
+              <p>61 9 8596-4235</p>
             </div>
             <div className="contact-item">
               <img src={mail} alt="" />
-              <p>marcos@marcos.com</p>
+              <p>marcos.dev@gmail.com</p>
             </div>
           </div>
           <div className="contact-div-2">
@@ -229,7 +229,7 @@ export const Main = () => {
             </div>
             <div className="contact-item">
               <img src={linkedin} alt="" />
-              <p>@marcosdev</p>
+              <p>Marcos de Sousa Fraga</p>
             </div>
           </div>
         </div>

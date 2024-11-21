@@ -11,7 +11,7 @@ export const CardCertificates = ({
     <S.CardDiv>
       <p className="card-title">{cardName}</p>
       <img className="tech_icon" src={cardImage} alt="" />
-      <a href={cardAdress}>
+      <a href={cardAdress} target="blank">
         <img className="exit_icon" download={cardDownload} src={exit} alt="" />
         <p>Veja o Certificado</p>
       </a>
