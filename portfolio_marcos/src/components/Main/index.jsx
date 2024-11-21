@@ -2,7 +2,6 @@ import hi from "../../assets/images/hi_icon.png";
 import download from "../../assets/images/download_icon.png";
 import dev from "../../assets/images/dev_image.png";
 import python_skill from "../../assets/images/python_skill.png";
-import react from "../../assets/images/react.png";
 import mysql from "../../assets/images/mysql.png";
 import vscode from "../../assets/images/vscode.png";
 import java_icon from "../../assets/images/java_icon.png";
@@ -93,7 +92,6 @@ export const Main = () => {
         <h2 className="section-title">Ferramentas</h2>
         <div className="card-div">
           <CardTech cardName="Python" cardImage={python_skill} />
-          <CardTech cardName="ReactJs" cardImage={react} />
           <CardTech cardName="MySQL" cardImage={mysql} />
           <CardTech cardName="VS Code" cardImage={vscode} />
         </div>
