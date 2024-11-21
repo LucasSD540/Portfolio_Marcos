@@ -72,6 +72,7 @@ export const MainDiv = styled.div`
           border-radius: 25px;
           border: none;
           outline: none;
+          font-size: 16px;
         }
           input::placeholder {
             color: #ccc;
@@ -90,6 +91,7 @@ export const MainDiv = styled.div`
           border-radius: 15px;
           padding: 24px;
           outline: none;
+          font-size: 16px;
         }
 
         textarea::placeholder {

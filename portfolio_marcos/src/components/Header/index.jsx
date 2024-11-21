@@ -44,6 +44,9 @@ export const Header = () => {
             <a className="link-item" href="#section-skills">
               Ferramentas
             </a>
+            <a className="link-item" href="#section-certificates">
+              Certificados
+            </a>
 
             <a className="link-item" href="#section-services">
               Serviços
@@ -79,6 +82,13 @@ export const Header = () => {
             Ferramentas
           </a>
 
+          <a
+            onClick={() => handleMenu()}
+            className="link-item"
+            href="#section-certificates"
+          >
+            Certificados
+          </a>
           <a
             onClick={() => handleMenu()}
             className="link-item"
